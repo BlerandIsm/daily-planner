@@ -7,6 +7,23 @@ $(document).ready(function(){
 
     //give button functionality to clear data from storage 
 
+//time comparing for the user to be organized
+$(".time-div").each(function(){
+    var timeDiv = $(this).attr("id").split("-")[1];
+    
+    if (currentHour == timeDiv) {
+      $(this).addClass("present");
+      $(this).children(".description").addClass("white-text");
+    } else if (currentHour < timeDiv) {
+      $(this).removeClass("present");
+      $(this).addClass("future");
+    } else if (currentHour > timeDiv) {
+      $(this).removeClass("future");
+      $(this).addClass("past");
+    }
+
+});
+
 
 //creating a local storage to save the values entered by user
 $(".saveBtn").click(function (event) {
