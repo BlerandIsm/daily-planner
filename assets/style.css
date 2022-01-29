@@ -1,7 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color:#ECECEC ;
     font-size: 16px;
     line-height: 1;
+  }
+  .container {
+    max-width: 1024px;
   }
   
   textarea{
@@ -11,62 +15,78 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    letter-spacing: 1px;
   }
   
   .jumbotron {
+    background: linear-gradient(to right, #00d2ff, #928bad);
     text-align: center;
-    background-color: transparent;
-    color: black;
+    color: white;
     border-radius: 0;
-    border-bottom: 10px solid black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    border-bottom: 10px solid #525529;
   }
   
   .description{
     white-space: pre-wrap;
+    font-weight: 500;
   }
   
   .time-block{
     text-align: center;
-    border-radius: 15px;
   }
   
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid  #525529;;
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    background-color:#0c0c0c;
+    color: white;
+    border-top: 1px#000000;
+    padding-top: 27px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
   }
   
   .past {
-    background-color: #d3d3d3;
+
+    background-color:#a590d6;
     color: white;
+    border-radius: 15px;
   }
   
   .present {
-    background-color: #ff6961;
-    color: white;
+    background-color: #dfe6e9;
+    border-radius: 15px;
   }
   
   .future {
-    background-color: #77dd77;
-    color: white;
+    background-color: #5da2d5;
+    border-radius: 15px;
   }
   
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06AED5;
+    background-color: #77dd77;
     color: white;
   }
   
   .saveBtn i:hover {
     font-size: 20px;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
   }
+  #clearFieldsBtn {
+    margin-top: 10px;
+    background-color:#F3D250;
+  }
+
+
   
